@@ -1,6 +1,6 @@
 function search() {
     const APIKey = "856fc01b5ad5b248910f5db280e4478d";
-    let city = document.querySelector("city-search").value;
+    let city = document.querySelector(".city-search").value;
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=imperial`;
     let fiveDayURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}&units=imperial`;
 
