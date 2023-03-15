@@ -8,3 +8,6 @@
 
 ### Good for simple weather searching when looking for temperature, wind speeds, and humidity.
 
+### Link to website: https://deafboi6.github.io/Weather-API/
+
+![image](https://user-images.githubusercontent.com/110741444/225450499-1e1a1502-3f7e-4d9a-92ae-ba81d397e7ce.png)
