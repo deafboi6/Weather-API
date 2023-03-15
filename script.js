@@ -4,7 +4,7 @@ document.querySelector(".search-button").addEventListener("click", function () {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=imperial`;
     let fiveDayURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}&units=imperial`;
 
-    document.querySelector(".weather").style.display = "block";
+    document.querySelector(".forecast").style.display = "flex";
 
     fetch(url)
         .then((res) => res.json())
@@ -12,7 +12,6 @@ document.querySelector(".search-button").addEventListener("click", function () {
             console.log(data);
             document.querySelector(".city-name").innerText = city;
             document.querySelector(".date").innerText = moment.unix(data.dt).format("MMM Do");
-            document.querySelector(".icon").src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
             document.querySelector(".temp").innerText = `Temp: ${data.main.temp}F`;
             document.querySelector(".wind").innerText = `Windspeed: ${data.wind.speed}MPH`;
             document.querySelector(".humidity").innerText = `Humidity: ${data.main.humidity}%`;
